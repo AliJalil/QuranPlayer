@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/activityName">
 
         <TextView
-            android:id="@+id/zyarhTitle"
+            android:id="@+id/ayahTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/smallMargin"
@@ -79,11 +79,8 @@
     <ScrollView
         android:id="@+id/readersList"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/cod_grey_color"
-        app:layout_constraintBottom_toTopOf="@id/playerView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="0dp"
+        android:background="@color/cod_grey_color">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -143,7 +140,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.5"
-                     />
+                    app:tint="@color/dim_gray"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -216,7 +213,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/seekBar"
             app:layout_constraintWidth_percent="0.2"
-            app:srcCompat="@drawable/playblue" />
+            app:srcCompat="@drawable/playblue"
+            app:tint="@color/dim_gray"/>
 
         <ImageView
             android:id="@+id/preImg"
@@ -230,7 +228,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/playStopImg"
             app:layout_constraintTop_toTopOf="@+id/playStopImg"
-            app:srcCompat="@drawable/backward" />
+            app:srcCompat="@drawable/backward"
+            app:tint="@color/dim_gray"/>
 
         <ImageView
             android:id="@+id/nextImg"
@@ -244,7 +243,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toEndOf="@+id/playStopImg"
             app:layout_constraintTop_toTopOf="@+id/playStopImg"
-            app:srcCompat="@drawable/forward" />
+            app:srcCompat="@drawable/forward"
+            app:tint="@color/dim_gray"/>
 
         <TextView
             android:id="@+id/currentTime"
@@ -268,7 +268,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/nextImg"
-            app:srcCompat="@drawable/unmute" />
+            app:srcCompat="@drawable/unmute"
+            app:tint="@color/dim_gray"/>
 
         <SeekBar
             android:id="@+id/seekBar"
@@ -295,7 +296,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/preImg"
-            app:srcCompat="@drawable/download" />
+            app:srcCompat="@drawable/download"
+            app:tint="@color/dim_gray"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -319,7 +321,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/zoom_in" />
+            app:srcCompat="@drawable/zoom_in"
+            app:tint="@color/dim_gray"/>
 
         <ImageView
             android:id="@+id/zoomOut"
@@ -334,10 +337,11 @@
             app:layout_constraintStart_toEndOf="@+id/zoomIn"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5"
-            app:srcCompat="@drawable/zoom_in" />
+            app:srcCompat="@drawable/zoom_out"
+            app:tint="@color/dim_gray"/>
 
         <ImageView
-            android:id="@+id/imageView26"
+            android:id="@+id/chooseReaderImg"
             android:layout_width="0dp"
             android:layout_height="@dimen/control_img_height"
             android:layout_marginEnd="@dimen/mediumMargin"
@@ -345,7 +349,8 @@
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/zoomOut"
-            app:srcCompat="@drawable/reader" />
+            app:srcCompat="@drawable/reader"
+            app:tint="@color/dim_gray"/>
 
         <TextView
             android:id="@+id/chooseReader"
@@ -355,9 +360,9 @@
             android:fontFamily="@font/the_sans_bold"
             android:text="@string/choose_reader"
             android:textColor="@color/dim_gray"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView26"
-            app:layout_constraintEnd_toStartOf="@+id/imageView26"
-            app:layout_constraintTop_toTopOf="@+id/imageView26" />
+            app:layout_constraintBottom_toBottomOf="@+id/chooseReaderImg"
+            app:layout_constraintEnd_toStartOf="@+id/chooseReaderImg"
+            app:layout_constraintTop_toTopOf="@+id/chooseReaderImg" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -376,7 +381,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView28"
+                android:id="@+id/playUpImg"
                 android:layout_width="0dp"
                 android:layout_height="15dp"
                 android:layout_marginStart="8dp"
@@ -384,7 +389,8 @@
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toEndOf="@+id/textView16"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/play" />
+                app:srcCompat="@drawable/play"
+                app:tint="@color/dim_gray" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -392,11 +398,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/the_sans_bold"
                 android:text="@string/play_audio"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                app:layout_constraintBottom_toBottomOf="@+id/playUpImg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.45"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView28" />
+                app:layout_constraintTop_toTopOf="@+id/playUpImg"
+
+
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
