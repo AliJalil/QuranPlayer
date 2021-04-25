@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallMargin">8dp</dimen>
+    <dimen name="mediumMargin">16dp</dimen>
+    <dimen name="largeMargin">32dp</dimen>
+    <dimen name="xLargeMargin">64dp</dimen>
+    <dimen name="xxLargeMargin">128dp</dimen>
+
+    <dimen name="headerFontSize">30sp</dimen>
+    <dimen name="bottomViewHeight">50dp</dimen>
+    <dimen name="playerViewHeight">80dp</dimen>
+    <dimen name="readerNameFontSize">14sp</dimen>
+    <dimen name="ayah_font_size">28sp</dimen>
+    <dimen name="control_img_height">20dp</dimen>
+
+
+</resources>

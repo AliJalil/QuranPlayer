@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A96C5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="narvikColor">#EAEADB</color>
+    <color name="blueColor">#4A96C5</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="adabZiaraColor">#8E8E8E</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="cod_grey_color">#323334</color>
+    <color name="dim_gray">#707070</color>
+</resources>
